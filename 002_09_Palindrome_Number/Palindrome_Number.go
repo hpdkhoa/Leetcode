@@ -2,22 +2,12 @@ package _02_09_Palindrome_Number
 
 func isPalindrome(x int) bool {
 	if x < 0 {
-		return false;
+		return false
 	}
-	temp := x;
-	reverse := 0;
-	for temp > 0{
-		reverse = reverse * 10 + temp % 10;
-		temp /= 10;
+	tail := 0
+	for head := x; head != 0;{
+		tail = tail * 10 + head % 10
+		head /= 10
 	}
-	temp =x;
-	for reverse != 0 {
-		if reverse % 10 == temp % 10 {
-			reverse /= 10;
-			temp /= 10;
-		} else {
-			return false;
-		}
-	}
-	return true;
+	return tail == x
 }
