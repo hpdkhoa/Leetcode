@@ -1,4 +1,4 @@
-package _06_28_ImplementStrStr__
+package _04_28_ImplementStrStr__
 
 func strStr(haystack string, needle string) int {
 	if needle == ""{

@@ -1,4 +1,4 @@
-package _04_20_ValidParentheses
+package _03_20_ValidParentheses
 
 func isValid(s string) bool {
 	substr := ""

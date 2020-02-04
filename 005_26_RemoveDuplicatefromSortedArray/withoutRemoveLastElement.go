@@ -1,4 +1,4 @@
-package _07_26_RemoveDuplicatefromSortedArray
+package _05_26_RemoveDuplicatefromSortedArray
 
 func _removeDuplicates(nums []int) int {
 	if len(nums) == 0 {
